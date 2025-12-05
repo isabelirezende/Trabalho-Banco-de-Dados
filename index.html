@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Vendas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- TELA DE LOGIN -->
+    <div id="login-screen" class="screen active">
+        <h2>Login do Cliente</h2>
+
+        <input id="login-cpf" type="text" placeholder="CPF">
+        <input id="login-senha" type="password" placeholder="Senha">
+
+        <button onclick="realizarLogin()">Entrar</button>
+
+        <p id="login-erro"></p>
+    </div>
+
+    <!-- TELA DE VENDAS -->
+    <div id="venda-screen" class="screen">
+        <h2>Registrar Compra</h2>
+
+        <div id="produtos-lista"></div>
+
+        <h3>Total: R$ <span id="total"></span></h3>
+
+        <button class="finalizar" onclick="finalizarVenda()">Finalizar Compra</button>
+        <p id="msg-final"></p>
+    </div>
+
+<script src="script.js"></script>
+</body>
+</html>
